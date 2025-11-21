@@ -1,0 +1,152 @@
+/*
+ * Copyright 2020 Adobe. All rights reserved.
+ * This file is licensed to you under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License. You may obtain a copy
+ * of the License at http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software distributed under
+ * the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR REPRESENTATIONS
+ * OF ANY KIND, either express or implied. See the License for the specific language
+ * governing permissions and limitations under the License.
+ */
+ :root {
+  /* Primary Colors */
+  --brand-primary: #FFEA00; /* Yellow */
+  --brand-secondary: #202020; /* Black */
+  --brand-third: #EBEBEB; /* Gray Light */
+
+  /* Additional Colors */
+  --black: #202020;
+  --gray: #696969;
+  --gray-light: #EBEBEB;
+  --gray-lighter: #F7F7F7;
+  --white: #fff;
+  --yellow: #FFEA00;
+  --blue: #0045FF;
+  --pink: #FF0058;
+  
+  /* Feedback Block Colors */
+  --feedback-text: rgb(9 9 20);
+  --feedback-company: rgb(100 116 139);
+  --feedback-rating: rgb(37 99 235);
+  --feedback-shadow: rgb(0 0 0 / 5%);
+
+  /* Spacing */
+  --space-12: 12px;
+  --space-16: 16px;
+  --space-24: 24px;
+  --space-32: 32px;
+  --space-48: 48px;
+
+  /* Text and Link Colors */
+  --text-color: #202020;
+  --link-color: #FFEA00;
+  --link-hover-color: #FFEA00;
+
+  /* Font Families */
+  --body-font-family: "Source Sans Pro", "Helvetica Neue", helvetica, arial, sans-serif;
+  --heading-font-family: "Asar", georgia, "Times New Roman", times, serif;
+
+  /* Font Sizes */
+  --font-size-base: 18px;
+  --font-size-h1: 40px;
+  --font-size-h2: 36px;
+  --font-size-h3: 24px;
+  --font-size-h4: 16px;
+  --font-size-h5: 14px;
+  --font-size-h6: 10px;
+
+  /* Line Heights */
+  --line-height-base: 1.5;
+}
+
+/* Styles */
+body {
+  background-color: var(--white);
+  color: var(--text-color);
+  font-family: var(--body-font-family);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-base);
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font-family);
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+h1 { font-size: var(--font-size-h1); }
+h2 { font-size: var(--font-size-h2); }
+h3 { font-size: var(--font-size-h3); }
+h4 { font-size: var(--font-size-h4); }
+h5 { font-size: var(--font-size-h5); }
+h6 { font-size: var(--font-size-h6); }
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--link-hover-color);
+  text-decoration: underline;
+}
+
+button, a.button {
+  background-color: var(--link-color);
+  border: 2px solid transparent;
+  color: var(--black);
+  cursor: pointer;
+  display: inline-block;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.25;
+  padding: 0.5em 1.2em;
+  text-align: center;
+  text-decoration: none;
+}
+
+button:hover, a.button:hover {
+  background-color: var(--link-hover-color);
+}
+
+/* Responsive Grid */
+.aem-grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 1680px; /* Example max-width */
+}
+
+.aem-grid-column {
+  padding: 0 14px; /* Example gutter-padding */
+}
+
+@media (width <= 767px) {
+  .aem-grid {
+    flex-direction: column;
+  }
+}
+
+/* Layout */
+header {
+  height: var(--nav-height, 64px);
+}
+
+main > .section {
+  margin: 40px 0;
+}
+
+main > .section > div {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 24px;
+}
+
+@media (width >= 900px) {
+  main > .section > div {
+    padding: 0 32px;
+  }
+}
