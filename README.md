@@ -2,8 +2,8 @@
 Your project's description...
 
 ## Environments
-- Preview: https://main--accelarate2026--anshugulati.aem.page/
-- Live: https://main--accelarate2026--anshugulati.aem.live/
+- Preview: https://main--accelerate2026--anshugulati.aem.page/
+- Live: https://main--accelerate2026--anshugulati.aem.live/
 
 ## Documentation
 
