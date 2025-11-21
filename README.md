@@ -2,8 +2,8 @@
 Your project's description...
 
 ## Environments
-- Preview: https://main--demo-site--Subrat-Code-94.aem.page/
-- Live: https://main--demo-site--Subrat-Code-94.aem.live/
+- Preview: https://main--accelarate2026--anshugulati.aem.page/
+- Live: https://main--accelarate2026--anshugulati.aem.live/
 
 ## Documentation
 
